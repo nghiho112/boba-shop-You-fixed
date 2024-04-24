@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Boba Tea Shop</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    h3 {
+      color: #000;
+    }
+
+    .drink {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to Boba Tea Shop!</h1>
+      <p>Discover our wide range of delicious boba tea drinks.</p>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <div class="drink">
+        <h3>Taro Milk Tea</h3>
+        <p>A classic boba tea made with taro root powder, milk, and tapioca pearls.</p>
+        <p>Ingredients: Taro root powder, milk, tapioca pearls</p>
+      </div>
+
+      <div class="drink">
+        <h3>Matcha Latte</h3>
+        <p>A refreshing blend of matcha green tea, milk, and sweetened with honey.</p>
+        <p>Ingredients: Matcha green tea, milk, honey</p>
+      </div>
+
+      <!-- Add more drink options here -->
+    </section>
+
+    <section id="locations">
+      <h2>Locations</h2>
+      <p>We have several locations where you can visit us:</p>
+      <ul>
+        <li>1234 Main Street, City</li>
+        <li>5678 Park Avenue, Town</li>
+        <li>9012 Elm Road, Village</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Contact Us</h3>
+    <p>Email: info@bobateashop.com</p>
+    <p>Phone: 123-456-7890</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var navLinks = document.querySelectorAll("nav ul li a");
+
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          var target = document.querySelector(this.getAttribute("href"));
+          target.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
 
